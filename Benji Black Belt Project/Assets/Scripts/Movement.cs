@@ -75,7 +75,7 @@ public class Movement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Death")
+        if (collision.gameObject.tag == "Death" || collision.gameObject.tag == "Enemy")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
