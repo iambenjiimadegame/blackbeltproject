@@ -25,7 +25,7 @@ public class Panel : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(Lock);
-            Destroy(collision);
+            Destroy(collision.gameObject);
         }
     }
 }
